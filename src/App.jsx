@@ -44,7 +44,7 @@ export default function App() {
           <h3>Наш подход к обучению</h3>
           <ul>
             {ways.map((way) => {
-              return <WayToTeach {...way}/>
+              return <WayToTeach {...way}/>      {/** С помощью метода .map() Для каждого элемента массива ways в компонент <WaysToTeach/> вызываем элемент массива, из которого его содержимое в логике которая задана в wayToTeach.jsx подставляется и рендерится*/}
             })}
 
 
