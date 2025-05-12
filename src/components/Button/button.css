@@ -12,6 +12,11 @@
     opacity: 0.8;
 }
 
+.button:disabled {
+    background-color: rgb(128, 79, 79);
+    
+}
+
 .button.active {
     background: #3e6ae1;
     color: #fff;

@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+import Header from "./components/Header/header";
+import IntroSection from "./components/IntroSection";
+import TeachingSection from "./components/TeachingSection";
+import DifferencesSection from "./components/DifferencesSection";
+import TabsSection from "./components/TabsSection";
+import FeedBackSection from "./components/FeedbackSection/FeedBackSection";
+import { useState } from "react";
+
+
+export default function App() {
+  const [tab, setTab] = useState('feedback')
+=======
 import Header from "./components/header";
 import { ways, differences } from "./data";
 import WayToTeach from "./components/wayToTeach";
@@ -23,11 +36,31 @@ export default function App() {
     setButtonActive(type);
     console.log(contentType);
   }
+>>>>>>> prod
 
   return (
-    <div>
+    <>
       <Header />
       <main>
+<<<<<<< HEAD
+        <IntroSection />
+        <TabsSection activeButton={tab} active={tab} onChange={setTab}/>
+
+        {tab === 'main' && (
+        <> 
+          <TeachingSection />
+          <DifferencesSection />
+        </>
+      )}
+
+        {tab === 'feedback' && (
+        <>
+          <FeedBackSection />
+        </>
+        )}
+
+        
+=======
         <h1>Hello React!</h1>
         <section>
           <h3>Наш подход к обучению</h3>
@@ -70,7 +103,12 @@ export default function App() {
           </p>
           <p>{counter}</p>
         </section>
+>>>>>>> prod
       </main>
-    </div>
+    </>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> prod
